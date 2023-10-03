@@ -1,2 +1,2 @@
 # m226
-Repository von Sorusch Afkhami und Leon Kurtaj für das Modul 226 Objektorientiertes Programmieren
+Repository von Sorusch Afkhami, Leon Kurtaj und Wesam Awelkir für das Modul 226 Objektorientiertes Programmieren
