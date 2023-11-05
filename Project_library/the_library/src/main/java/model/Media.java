@@ -31,6 +31,10 @@ public abstract class Media {
         return amount;
     }
 
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
     public void loanMedium(int amount) {
         this.amount --;
         if (amount == 0){
