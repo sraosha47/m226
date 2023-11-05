@@ -2,13 +2,14 @@ package model;
 
 public abstract class Media {
     private String title;
-    private Boolean available;
+    private String author;
+    private Boolean available= true;
     private int amount;
 
-    public Media(String title, String available, int amount) {
+    public Media(String title, String author, int amount) {
         this.title = title;
+        this.author = author;
         this.amount = amount;
-        this.available = true;
     }
 
     public String getTitle() {
@@ -23,15 +24,21 @@ public abstract class Media {
         return amount;
     }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
+    public void loanMedium(int amount) {
+        this.amount --;
+        if (amount == 0){
+            this.available=false;
+        }
+    }
+
+    public void returnMedium(int amount) {
+        this.amount ++;
+        if (amount == 0){
+            this.available=true;
+        }
     }
 
     public Boolean getAvailable() {
         return available;
-    }
-
-    public void setTelefonnummer(Boolean available) {
-        this.available = available;
     }
 }
