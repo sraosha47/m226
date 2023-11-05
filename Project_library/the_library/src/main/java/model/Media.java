@@ -20,6 +20,13 @@ public abstract class Media {
         this.title = title;
     }
 
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
     public int getAmount() {
         return amount;
     }
