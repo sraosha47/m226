@@ -6,13 +6,13 @@ package model;
 public abstract class User {
     private String vorname;
     private String nachname;
-    private String telefonnummer;
+    private String phone;
     private String email;
 
-    public User(String vorname, String nachname, String telefonnummer, String email) {
+    public User(String vorname, String nachname, String phone, String email) {
         this.vorname = vorname;
         this.nachname = nachname;
-        this.telefonnummer = telefonnummer;
+        this.phone = phone;
         this.email = email;
     }
 
@@ -32,12 +32,16 @@ public abstract class User {
         this.nachname = nachname;
     }
 
-    public String getTelefonnummer() {
-        return telefonnummer;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setTelefonnummer(String telefonnummer) {
-        this.telefonnummer = telefonnummer;
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     public void setEmail(String email) {
