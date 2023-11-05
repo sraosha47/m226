@@ -4,32 +4,32 @@ package model;
  * Backend Class for Person
  */
 public abstract class User {
-    private String vorname;
-    private String nachname;
+    private String firstname;
+    private String surname;
     private String phone;
     private String email;
 
-    public User(String vorname, String nachname, String phone, String email) {
-        this.vorname = vorname;
-        this.nachname = nachname;
+    public User(String firstname, String surname, String phone, String email) {
+        this.firstname = firstname;
+        this.surname = surname;
         this.phone = phone;
         this.email = email;
     }
 
-    public String getVorname() {
-        return vorname;
+    public String getFirstname() {
+        return firstname;
     }
 
-    public void setVorname(String vorname) {
-        this.vorname = vorname;
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
-    public String getNachname() {
-        return nachname;
+    public String getSurname() {
+        return surname;
     }
 
-    public void setNachname(String nachname) {
-        this.nachname = nachname;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
     public String getPhone() {
