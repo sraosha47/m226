@@ -1,2 +1,2 @@
-public class customer {
+public abstract class Customer extends User {
 }
