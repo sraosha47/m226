@@ -4,5 +4,6 @@ Diagrams of our project
 Library](Dokumentation/pictures/class_library.png "class_library")
 [Library](https://github.com/sraosha47/m226/Dokumentation/pictures/class_library.png)
 
-##Class Diagram
+## Class Diagram
+
 ![alt text](https://github.com/sraosha47/m226/blob/main/Dokumentation/pictures/class_library.png "Logo Title Text 1")
