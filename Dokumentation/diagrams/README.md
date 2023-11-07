@@ -1,6 +1,6 @@
 Diagrams of our project
 # Usecase
-[/Dokumentation/diagrams/usecase_library.drawio|ALT TEXT]
+[UML](Dokumentation/diagrams/usecase_library.drawio)
 
 # Sequence-diagrams
 
