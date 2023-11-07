@@ -1,8 +1,4 @@
 Diagrams of our project
-# Usecase
-[UML](Dokumentation/diagrams/usecase_library.drawio)
+# Usecase, Sequence-diagrams, Class
 
-# Sequence-diagrams
-
-
-# Class
+[Library](Dokumentation/diagrams/"usecase_library.drawio")
