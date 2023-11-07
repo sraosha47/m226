@@ -7,11 +7,11 @@ Diagrams of our project
 
 ## Sequence Diagrams
 
-### Usecase Login
+### Usecase <Login>
 
 ![alt text](https://github.com/sraosha47/m226/blob/main/Dokumentation/pictures/sequence-diagram_login.png "Logo Title Text 1")
 
-### Usecase Create Account
+### Usecase <Create Account>
 
 ![alt text](https://github.com/sraosha47/m226/blob/main/Dokumentation/pictures/sequence_diagram_create_Account.png "Logo Title Text 1")
 
