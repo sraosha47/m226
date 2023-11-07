@@ -13,7 +13,7 @@ Diagrams of our project
 
 ### sequence-diagram_usecase_create_Account
 
-![alt text](https://github.com/sraosha47/m226/blob/main/Dokumentation/pictures/sequence-diagram_create_Account.png "Logo Title Text 1")
+![alt text](https://github.com/sraosha47/m226/blob/main/Dokumentation/pictures/sequence_diagram_create_Account.png "Logo Title Text 1")
 
 ## Usecase
 
