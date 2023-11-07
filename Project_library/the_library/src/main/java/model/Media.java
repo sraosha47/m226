@@ -44,7 +44,7 @@ public abstract class Media {
 
     public void returnMedium(int amount) {
         this.amount ++;
-        if (amount != 0){
+        if (this.available == false {
             this.available=true;
         }
     }
