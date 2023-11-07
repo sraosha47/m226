@@ -1,0 +1,2 @@
+public class CdTests {
+}
