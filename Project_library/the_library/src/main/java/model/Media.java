@@ -3,7 +3,7 @@ package model;
 public abstract class Media {
     private String title;
     private String author;
-    private Boolean available= true;
+    private boolean available= true;
     private int amount;
 
     public Media(String title, String author, int amount) {
@@ -44,12 +44,12 @@ public abstract class Media {
 
     public void returnMedium(int amount) {
         this.amount ++;
-        if (this.available == false {
+        if (this.available == false){
             this.available=true;
         }
     }
 
-    public Boolean getAvailable() {
+    public boolean getAvailable() {
         return available;
     }
 }
