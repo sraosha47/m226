@@ -5,6 +5,8 @@ public abstract class Media {
     private String author;
     private boolean available = true;
 
+    private String owner;
+
 
     public Media(String title, String author) {
         this.title = title;
@@ -27,15 +29,23 @@ public abstract class Media {
         this.author = author;
     }
 
+    public String getOwner(){
+        return this.owner;
+    }
+    public void setOwner(String name){
+        this.owner = name;
+    }
+
     public boolean getAvailable() {
         return available;
     }
 
-    public void switchAvailability() {
-        if (this.available == true) {
+    public void switchAvailablity() {
+        if (available == true) {
             this.available = false;
         } else {
             this.available = true;
         }
     }
+
 }
