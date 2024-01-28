@@ -4,9 +4,9 @@ public abstract class Media {
     private String title;
     private String author;
     private boolean available = true;
-
+    private String description;
     private String owner;
-
+    private long timestamp;
 
     public Media(String title, String author) {
         this.title = title;
@@ -29,6 +29,16 @@ public abstract class Media {
         this.author = author;
     }
 
+    public void info() {
+        System.out.println( "Title: "+ this.title);
+        System.out.println( "Author: "+ this.author);
+        if (available){
+            System.out.println( "Available" );
+        } else {
+            System.out.println( "Not available");
+        }
+    }
+
     public String getOwner(){
         return this.owner;
     }
@@ -47,5 +57,19 @@ public abstract class Media {
             this.available = true;
         }
     }
+
+    public void setTimestamp() {
+        this.timestamp = System.currentTimeMillis();
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+
 
 }
