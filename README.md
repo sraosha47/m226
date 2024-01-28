@@ -8,12 +8,43 @@ Repository von Sorusch Afkhami, Leon Kurtaj und Wesam Awelkir für das Modul 226
 
 
 ## Classes
-[Main](Project_library/the_library/src/main/java)
+
 ### [User](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/User.java)
-[Insert description here]
+Abstrakte Klasse, welches den Benutzer, die unsere Library-App verwendet, definiert.
 #### Methods
-* method 1
-* method 2
+* LogIn
+* CreateAccount
+* ChangePassword
+* CheckAccount
+
+### [Media](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/Media.java)
+Abstrakte Klasse, welches die Medien, wie zum Beispiel in Buch oder CD,definiert. Es zeigt auch an, ob die Medien auch bestellbar sind.
+#### Methods
+* 
+
+### [Customer](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/Customer.java)
+Subklasse von User: Für Kunden der Bibliothek, die ein Buch reservieren möchten.
+#### Methods
+* reserveMedia
+* browseMedia
+* browseRentedMedia
+
+### [Librarian](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/Librarian.java)
+Subklasse von User: Für die Bibliotekarinnen/Bibliotekaren, welches neue Bücher und CDs zum Reservieren hinzufügt.
+#### Methods
+* addItem
+* changeItemInfo
+* implentInDB
+
+### [Books](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/Book.java)
+Subklasse von Media: Dient zur Reservierung von Büchern.
+#### Methods
+* 
+
+### [CD](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/CD.java)
+Subklasse von Media: Dient zur Reservierung von CDs.
+#### Methods
+* 
 
 ## Testing
 [Tests](Project_library/the_library/src/test/java)
