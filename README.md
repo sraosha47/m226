@@ -42,7 +42,7 @@ Subklasse von Media: Dient zur Reservierung von Büchern.
 * 
 
 ### [CD](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/CD.java)
-Subklasse von Media: Dient zur Reservierung von CDs.
+Subklasse von Media: Dient zur Reservierung von CDs und DVDs.
 #### Methods
 * 
 
