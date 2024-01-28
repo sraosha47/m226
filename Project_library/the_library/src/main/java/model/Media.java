@@ -3,7 +3,7 @@ package model;
 public abstract class Media {
     private String title;
     private String author;
-    private boolean available= true;
+    private boolean available = true;
 
 
     public Media(String title, String author) {
@@ -29,5 +29,13 @@ public abstract class Media {
 
     public boolean getAvailable() {
         return available;
+    }
+
+    public void switchAvailability() {
+        if (this.available == true) {
+            this.available = false;
+        } else {
+            this.available = true;
+        }
     }
 }
