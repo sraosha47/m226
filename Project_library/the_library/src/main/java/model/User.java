@@ -28,6 +28,10 @@ public abstract class User {
         return surname;
     }
 
+    public String getFullname() {
+        return this.firstname.concat(" " + this.surname);
+    }
+
     public void setSurname(String surname) {
         this.surname = surname;
     }
