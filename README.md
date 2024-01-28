@@ -20,7 +20,11 @@ Abstrakte Klasse, welches den Benutzer, die unsere Library-App verwendet, defini
 ### [Media](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/Media.java)
 Abstrakte Klasse, welches die Medien, wie zum Beispiel in Buch oder CD,definiert. Es zeigt auch an, ob die Medien auch bestellbar sind.
 #### Methods
-* 
+* getTitle
+* setTitle
+* getAuthor
+* setAuthor
+* getAvailable
 
 ### [Customer](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/Customer.java)
 Subklasse von User: Für Kunden der Bibliothek, die ein Buch reservieren möchten.
