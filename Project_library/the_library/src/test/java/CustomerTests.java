@@ -7,43 +7,54 @@ import org.junit.jupiter.api.Test;
 public class CustomerTests {
 
     @Test
-    public void rentMedia() {
-        // Erstelle einen Mock für das Media-Objekt
+    public void testRentMedia() {
+        // Create a mock for the Media class
         Media mockMedia = mock(Media.class);
 
-        // Setze das Media-Objekt als verfügbar
+        // Configure the behavior of getAvailable method of the Media mock
         when(mockMedia.getAvailable()).thenReturn(true);
 
-        // Erstelle einen Customer
-        Customer customer = new Customer("Max", "Mustermann", "123456789", "max@example.com");
+        // Create a Customer instance
+        Customer customer = new Customer("John", "Doe", "123456789", "john@example.com");
 
-        // Rufe die rentMedia-Methode auf
+        // Call the rentMedia method on the Customer object
         customer.rentMedia(mockMedia);
 
-        // Überprüfe, ob switchAvailability und setOwner aufgerufen wurden
+        // Verify that the expected methods were called on the Media mock
+        verify(mockMedia, times(1)).getAvailable();
         verify(mockMedia, times(1)).switchAvailability();
         verify(mockMedia, times(1)).setOwner(customer.getFullname());
+        verify(mockMedia, times(1)).setTimestamp();
+
+        // Verify that the media list was updated in the Customer object
+        assert(customer.media.contains(mockMedia));
     }
 
     @Test
     public void testReturnMedia() {
-        // Erstelle einen Mock für das Media-Objekt
+        // Create a mock for the Media class
         Media mockMedia = mock(Media.class);
 
-        // Setze das Media-Objekt als verfügbar
-        when(mockMedia.getAvailable()).thenReturn(false);
+        // Configure the behavior of getOwner method of the Media mock
+        when(mockMedia.getOwner()).thenReturn("John Doe");
 
-        // Setze den Besitzer des Media-Objekts
-        when(mockMedia.getOwner()).thenReturn("Max Mustermann");
+        // Create a Customer instance
+        Customer customer = new Customer("John", "Doe", "123456789", "john@example.com");
 
-        // Erstelle einen Customer
-        Customer customer = new Customer("Max", "Mustermann", "123456789", "max@example.com");
+        // Add the mockMedia to the customer's media list
+        customer.media.add(mockMedia);
 
-        // Rufe die returnMedia-Methode auf
+        // Call the returnMedia method on the Customer object
         customer.returnMedia(mockMedia);
 
-        // Überprüfe, ob switchAvailability und setOwner aufgerufen wurden
+        // Verify that the expected methods were called on the Media mock
+        verify(mockMedia, times(1)).getOwner();
         verify(mockMedia, times(1)).switchAvailability();
         verify(mockMedia, times(1)).setOwner("");
+
+        // Verify that the media list was updated in the Customer object
+        assert(!customer.media.contains(mockMedia));
     }
+
+    // Add more test methods as needed for other functionalities in the Customer class
 }
