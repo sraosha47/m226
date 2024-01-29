@@ -11,7 +11,7 @@ public abstract class User {
     private String phone;
     private String email;
 
-    public ArrayList<Media> Media = new ArrayList<>();
+    public ArrayList<Media> media = new ArrayList<>();
     public User(String firstname, String surname, String phone, String email) {
         this.firstname = firstname;
         this.surname = surname;
