@@ -19,6 +19,7 @@ public class Customer extends User {
     }
 
     public void list() {
+        System.out.println("Currently rented: \n");
         for(Media medium : media) {
             medium.info();
             System.out.println("Owned by: " + medium.getOwner() + "\n");
@@ -26,9 +27,10 @@ public class Customer extends User {
     }
 
     public void returnMedia(Media medium) {
-        if(medium.getOwner() == this.getFullname()){
+        if(medium.getOwner().equals(this.getFullname())){
             medium.switchAvailability();
             medium.setOwner("");
+            media.remove(medium);
         } else {
             System.out.println("This article is not in your possession.");
         }
