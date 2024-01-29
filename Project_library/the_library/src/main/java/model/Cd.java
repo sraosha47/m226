@@ -8,6 +8,10 @@ public class Cd extends Media {
         super(title, artist); // CDs may not have a specific author, passing an empty string
         this.artist = artist;
     }
+
+    public String getArtist() {
+        return artist;
+    }
     @Override
     public void info() {
         System.out.println("Title: " + this.getTitle());
