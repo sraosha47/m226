@@ -4,7 +4,7 @@ import model.Customer;
 import model.Media;
 import org.junit.jupiter.api.Test;
 
-public class CustomerTest {
+public class CustomerTests {
 
     @Test
     public void testRentMedia() {
