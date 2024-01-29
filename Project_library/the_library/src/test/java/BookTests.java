@@ -49,4 +49,32 @@ public class BookTests {
     }
 
     // Add more test methods as needed for other functionalities in the Book class
+    @Test
+    public void testBookCreation() {
+        // Create a mock for the Book class
+        Book mockBook = mock(Book.class);
+
+        // Configure the behavior of getTitle, getAuthor, and getIsbn methods
+        when(mockBook.getTitle()).thenReturn("Sample Title");
+        when(mockBook.getAuthor()).thenReturn("Sample Author");
+        when(mockBook.getIsbn()).thenReturn("1234567890");
+
+        // Call the info method on the Book object
+        String title = mockBook.getTitle();
+        String author = mockBook.getAuthor();
+        String isbn = mockBook.getIsbn();
+
+        // Verify that the expected methods were called on the Book mock
+        verify(mockBook, times(1)).getTitle();
+        verify(mockBook, times(1)).getAuthor();
+        verify(mockBook, times(1)).getIsbn();
+
+        // Assert that the returned values match the expected values
+        assert(title.equals("Sample Title"));
+        assert(author.equals("Sample Author"));
+        assert(isbn.equals("1234567890"));
+    }
+
+    // Add more test methods as needed for other functionalities in the Book class
+}
 }

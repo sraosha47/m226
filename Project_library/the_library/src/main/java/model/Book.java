@@ -7,5 +7,7 @@ public class Book extends Media {
         super(title, author);
         this.isbn = isbn;
     }
-
+    public String getIsbn() {
+        return isbn;
+    }
 }
