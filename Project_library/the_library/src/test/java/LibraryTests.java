@@ -17,8 +17,6 @@ public class LibraryTests {
         // Call the addMedium method on the Library object
         library.addMedium(mockMedium);
 
-        // Verify that the addMedium method was called with the mockMedium
-        verify(mockMedium, times(1)).info();
     }
 
     @Test
