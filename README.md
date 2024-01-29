@@ -26,6 +26,9 @@ Abstrakte Klasse, welche die Medien, wie zum Beispiel ein Buch oder eine CD,defi
 * setOwner
 * getAvailable
 * switchAvailability
+* getDescription
+* setDescription
+* setTimestamp
 
 ### [Customer](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/Customer.java)
 Subklasse von User: Für Kunden der Bibliothek, die ein Buch reservieren möchten.
