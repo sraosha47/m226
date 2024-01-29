@@ -10,8 +10,8 @@ public class Main {
         example.rentMedia(newBook);
         example.rentMedia(newBook2);
         example.rentMedia(newCd);
-        example.list();
+        example.listRented();
         example.returnMedia(newBook);
-        example.list();
+        example.listRented();
     }
 }
