@@ -26,7 +26,7 @@ public class CustomerTests {
         verify(mockMedia, times(1)).setOwner(customer.getFullname());
         verify(mockMedia, times(1)).setTimestamp();
 
-        // Verify that the media list was updated in the Customer object
+        // Verify that the media listRented was updated in the Customer object
         assert(customer.media.contains(mockMedia));
     }
 
@@ -41,7 +41,7 @@ public class CustomerTests {
         // Create a Customer instance
         Customer customer = new Customer("John", "Doe", "123456789", "john@example.com");
 
-        // Add the mockMedia to the customer's media list
+        // Add the mockMedia to the customer's media listRented
         customer.media.add(mockMedia);
 
         // Call the returnMedia method on the Customer object
@@ -52,7 +52,7 @@ public class CustomerTests {
         verify(mockMedia, times(1)).switchAvailability();
         verify(mockMedia, times(1)).setOwner("");
 
-        // Verify that the media list was updated in the Customer object
+        // Verify that the media listRented was updated in the Customer object
         assert(!customer.media.contains(mockMedia));
     }
 

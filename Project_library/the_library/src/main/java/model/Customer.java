@@ -18,8 +18,8 @@ public class Customer extends User {
         }
     }
 
-    public void list() {
-        System.out.println("Currently rented: \n");
+    public void listRented() {
+        System.out.println("Currently rented: ");
         for(Media medium : media) {
             medium.info();
             System.out.println("Owned by: " + medium.getOwner() + "\n");
