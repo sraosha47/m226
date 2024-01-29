@@ -11,7 +11,7 @@ public class Customer extends User {
 
     public void rentMedia(Media medium){
         if(medium.getAvailable()){
-            medium.switchAvailablity();
+            medium.switchAvailability();
             medium.setOwner(this.getFullname());
             medium.setTimestamp();
             media.add(medium);
@@ -27,7 +27,7 @@ public class Customer extends User {
 
     public void returnMedia(Media medium) {
         if(medium.getOwner() == this.getFullname()){
-            medium.switchAvailablity();
+            medium.switchAvailability();
             medium.setOwner("");
         } else {
             System.out.println("This article is not in your possession.");

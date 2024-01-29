@@ -50,8 +50,8 @@ public abstract class Media {
         return available;
     }
 
-    public void switchAvailablity() {
-        if (available == true) {
+    public void switchAvailability() {
+        if(available) {
             this.available = false;
         } else {
             this.available = true;
