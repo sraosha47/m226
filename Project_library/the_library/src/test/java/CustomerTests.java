@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class CustomerTests {
 
     @Test
-    public void testRentMedia() {
+    public void rentMedia() {
         // Erstelle einen Mock für das Media-Objekt
         Media mockMedia = mock(Media.class);
 
