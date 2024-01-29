@@ -30,9 +30,9 @@ public abstract class Media {
     }
 
     public void info() {
-        System.out.println( "Title: "+ this.title);
-        System.out.println( "Author: "+ this.author);
-        if (available){
+        System.out.println( "Title: "+ this.getTitle());
+        System.out.println( "Author: "+ this.getAuthor());
+        if (getAvailable()){
             System.out.println( "Available" );
         } else {
             System.out.println( "Not available");
