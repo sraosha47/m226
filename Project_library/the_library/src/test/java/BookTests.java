@@ -13,6 +13,8 @@ public class BookTests {
         // Configure the behavior of getTitle, getAuthor, and getAvailable methods
         when(mockBook.getTitle()).thenReturn("Sample Title");
         when(mockBook.getAuthor()).thenReturn("Sample Author");
+        when(mockBook.getIsbn()).thenReturn("Sample ISBN");
+        when(mockBook.getDescription()).thenReturn("Sample Description");
         when(mockBook.getAvailable()).thenReturn(true);
 
         // Call the info method on the Book object
@@ -21,6 +23,8 @@ public class BookTests {
         // Verify that the expected methods were called on the Book mock
         verify(mockBook, times(1)).getTitle();
         verify(mockBook, times(1)).getAuthor();
+        verify(mockBook, times(1)).getIsbn();
+        verify(mockBook, times(1)).getDescription();
         verify(mockBook, times(1)).getAvailable();
     }
 
