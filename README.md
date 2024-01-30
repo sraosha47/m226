@@ -63,21 +63,58 @@ Subklasse von Media: Dient zur Erstellung von CDs und DVDs.
 * info
 
 ## Testing
-[Tests](Project_library/the_library/src/test/java)
+
 
 ### [Booktests](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/test/java/model/BookTests.java)
-
+* public void testBookInfo()
+    Wanted but not invoked:
+book.getTitle();
+-> at model.Media.getTitle(Media.java:17)
+* public void testBookSwitchAvailability()
+Process finished with exit code 0
+* public void testBookSetTimestamp()
+Process finished with exit code 0
+* public void testBookCreation()
+Process finished with exit code 0
 
 ### [CdTests](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/test/java/model/CdTests.java)
-
+* public void testCdInfo
+Wanted but not invoked:
+cd.getTitle();
+-> at model.Media.getTitle(Media.java:17)
 
 ### [Customertests](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/test/java/model/CustomerTests.java)
-
+* public void testRentMedia()
+Process finished with exit code 0
+* public void testReturnMedia()
+Process finished with exit code 0
 
 ### [LibrarianTests](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/test/java/model/LibrarianTests.java)
+* public void testAddMedia()
+Wanted but not invoked:
+arrayList.add(
+    Mock for Media, hashCode: 290509937
+);
+* public void testChangeMediaInfo()
+Wanted but not invoked:
+arrayList.contains(
+    Mock for Media, hashCode: 290509937
+);
 
 ### [LibraryTests](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/test/java/model/LibraryTests.java)
+* public void testListMedia()
+Process finished with exit code 0
 
 ### [UserTests](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/test/java/model/UserTests.java)
+* public void testGetFullname()
+Wanted but not invoked:
+user.getFirstname();
+-> at model.User.getFirstname(User.java:23)
+
+### [MediaTests](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/test/java/model/MediaTests.java)
+* public void testMediaMethods()
+Process finished with exit code 0
 
 ### [MainTests](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/test/java/model/MainTests.java)
+*  public void testRentMediaAndReturnMedia()
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because the return value of "model.Media.getOwner()" is null
