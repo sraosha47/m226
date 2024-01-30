@@ -71,5 +71,5 @@ public abstract class Media {
     }
 
 
-
+    public void setAvailability(boolean newAvailability) { this.available = newAvailability;}
 }
