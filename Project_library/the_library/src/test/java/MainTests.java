@@ -3,6 +3,7 @@ import static org.mockito.Mockito.*;
 import model.Book;
 import model.Cd;
 import model.Customer;
+import model.Media;
 import org.junit.jupiter.api.Test;
 
 public class MainTests {
