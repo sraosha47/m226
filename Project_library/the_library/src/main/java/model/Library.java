@@ -9,6 +9,10 @@ public class Library {
 
     private Library(){}
 
+    /**
+     *
+     * @return instance
+     */
     public static Library getInstance(){
         if (instance == null) {
             synchronized (Library.class) {
@@ -24,6 +28,10 @@ public class Library {
        media.add(medium);
     }
 
+    /**
+     *  Prints out all media available.
+     * @param ""  no parameters needed
+     */
     public void listMedia(){
         System.out.println("Following articles are available: ");
         for (Media medium : media) {
