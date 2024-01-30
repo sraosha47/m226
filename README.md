@@ -40,39 +40,44 @@ Subklasse von User: Für Kunden der Bibliothek, die ein Buch reservieren möchte
 ### [Librarian](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/Librarian.java)
 Subklasse von User: Für die Bibliotekarinnen/Bibliotekaren, welches neue Bücher und CDs zum Reservieren hinzufügt.
 #### Methods
-* addItem
-* changeItemInfo
+* addMedia
+* changeMediaInfo
+
+### [Library](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/Library.java)
+Eine Arrayliste für alle vorhandenen Medien in der Bibliothek
+#### Methods
+* getInstance
+* addMedium
+* listMedia
 
 ### [Books](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/Book.java)
 Subklasse von Media: Dient zur Erstellung von Büchern.
 #### Methods
-* 
+* getIsbn
+* info
 
 ### [CD](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/CD.java)
 Subklasse von Media: Dient zur Erstellung von CDs und DVDs.
 #### Methods
-* 
+* getArtist
+* info
 
 ## Testing
 [Tests](Project_library/the_library/src/test/java)
 
-### [Customer](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/Customer.java)
-Subklasse von User: Für Kunden der Bibliothek, die ein Buch reservieren möchten.
-#### Methods
-* rentMedia
-* returnMedia
-* list
+### [Booktests](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/test/java/model/BookTests.java)
 
-### [Librarian](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/Librarian.java)
-Subklasse von User: Für die Bibliotekarinnen/Bibliotekaren, welches neue Bücher und CDs zum Reservieren hinzufügt.
-#### Methods
-* addItem
-* changeItemInfo
 
-### [Books](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/Book.java)
-Subklasse von Media: Dient zur Erstellung von Büchern.
-#### Methods
-* 
+### [CdTests](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/test/java/model/CdTests.java)
 
-### [CD](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/CD.java)
-Subklasse von Media: Dient zur Erstellung von CDs und DVDs.
+
+### [Customertests](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/test/java/model/CustomerTests.java)
+
+
+### [LibrarianTests](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/test/java/model/LibrarianTests.java)
+
+### [LibraryTests](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/test/java/model/LibraryTests.java)
+
+### [UserTests](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/test/java/model/UserTests.java)
+
+### [MainTests](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/test/java/model/MainTests.java)
