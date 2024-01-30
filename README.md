@@ -56,3 +56,23 @@ Subklasse von Media: Dient zur Erstellung von CDs und DVDs.
 ## Testing
 [Tests](Project_library/the_library/src/test/java)
 
+### [Customer](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/Customer.java)
+Subklasse von User: Für Kunden der Bibliothek, die ein Buch reservieren möchten.
+#### Methods
+* rentMedia
+* returnMedia
+* list
+
+### [Librarian](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/Librarian.java)
+Subklasse von User: Für die Bibliotekarinnen/Bibliotekaren, welches neue Bücher und CDs zum Reservieren hinzufügt.
+#### Methods
+* addItem
+* changeItemInfo
+
+### [Books](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/Book.java)
+Subklasse von Media: Dient zur Erstellung von Büchern.
+#### Methods
+* 
+
+### [CD](https://github.com/sraosha47/m226/blob/main/Project_library/the_library/src/main/java/model/CD.java)
+Subklasse von Media: Dient zur Erstellung von CDs und DVDs.
